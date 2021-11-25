@@ -1,0 +1,14 @@
+package herancaepolimorfismo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Administrador adm1 = new Administrador();
+		
+		
+		
+		
+	}
+
+}

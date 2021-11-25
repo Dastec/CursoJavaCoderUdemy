@@ -1,0 +1,11 @@
+package br.com.dastec.calc.visao;
+
+import javax.swing.JButton;
+
+@SuppressWarnings("serial")
+public class Botao extends JButton {
+	
+	public Botao(String texto, Color cor) {
+		
+	}
+}

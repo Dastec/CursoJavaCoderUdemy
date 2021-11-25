@@ -1,0 +1,13 @@
+package composicao;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto();
+		
+		Compra compra1 = new Compra();
+		
+		
+		
+	}
+}

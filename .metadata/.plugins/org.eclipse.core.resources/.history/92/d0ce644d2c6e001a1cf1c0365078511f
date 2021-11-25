@@ -1,0 +1,20 @@
+package fundamentos.exerciciosmoduloum;
+import java.util.Scanner;
+
+public class ConveterCelsiusToFahrenheit {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		double f;
+		double c;
+		final int numerador = 32;
+		final int den1 = 5;
+		final int den2 = 9;
+		
+		System.out.println("Digite a temperatura em Celsius: ");
+		c = entrada.nextDouble();
+		
+		f = (c/den1)+numerador;
+		System.out.printf("A temperatura %.2f °C em °F é %.2f ",c,f);
+	}
+
+}

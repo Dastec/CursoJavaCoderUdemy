@@ -1,0 +1,31 @@
+package composicao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Compra {
+	
+	List<Item> itens = new ArrayList<Item>();
+	
+	void inserirItem(Item itens)
+	{
+		this.itens.add(itens);
+	}
+	
+	
+	double obterValorTotalPorCompra(Compra compra) 
+	{
+		double total = 0;
+		for(Item iten : itens) {
+			total = total + (iten.quantidade * iten.produto.preco);
+		}
+		return total;
+	}
+	
+	void listaDasCompraPorCompra(Compra compra) {
+		for(Item item : itens) {
+			System.out.println(item);
+		}
+	}
+	
+}

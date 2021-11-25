@@ -1,0 +1,26 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioCalculadora {
+	public static void main(String[] args) {
+		//Ler num1
+		//Ler num2
+		//+ - * / %
+		
+		double num1;
+		double num2;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro numero: ");
+		num1 = entrada.nextDouble();
+		
+		System.out.println("Digite o segundo numero numero: ");
+		num2 = entrada.nextDouble();
+		
+		System.out.println(num1+num2);
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+1587427101278	Rename type 'operacaodevetores'
+1587567550220	Encapsulate field 'valorDivida'
+1587567665873	Encapsulate field 'valorCredito'
+1587606479265	Rename type 'Emptr'
+1587838694455	Encapsulate field 'ajudaDeCusto'
+1587851613856	Rename package 'herançaepolimorfismosobrecarga'

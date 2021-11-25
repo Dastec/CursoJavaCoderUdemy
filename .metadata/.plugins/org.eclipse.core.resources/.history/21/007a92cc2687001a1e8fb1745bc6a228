@@ -1,0 +1,39 @@
+package herancaepolimorfismo;
+
+public class Fornecedor extends Pessoa {
+	Fornecedor(String nome) {
+		super(nome);
+		
+	}
+	Fornecedor(String nome, String endereco, String telefone) {
+		super(nome, endereco, telefone);
+	}
+
+	protected double valorCredito;
+	protected double valorDivida;
+
+	//Metodos Especiais
+	public double getValorDivida() {
+		return valorDivida;
+	}
+	public void setValorDivida(double valorDivida) {
+		this.valorDivida = valorDivida;
+	}
+	public double getValorCredito() {
+		return valorCredito;
+	}
+	public void setValorCredito(double valorCredito) {
+		this.valorCredito = valorCredito;
+	}
+	
+	public void obterSaldo() {
+		double saldo = this.valorCredito - this.valorDivida;
+		System.out.println(saldo);
+	}
+	
+	
+	
+	
+	
+
+}

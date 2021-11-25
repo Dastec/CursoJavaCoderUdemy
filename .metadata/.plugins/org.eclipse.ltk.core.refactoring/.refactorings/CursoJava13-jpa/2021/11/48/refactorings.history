@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;modelo.muitospramuitos.Sobrinhos.java&apos; to &apos;Sobrinho.java&apos;&#x0D;&#x0A;- Original project: &apos;CursoJava13-jpa&apos;&#x0D;&#x0A;- Original element: &apos;modelo.muitospramuitos.Sobrinhos.java&apos;&#x0D;&#x0A;- Renamed element: &apos;modelo.muitospramuitos.Sobrinho.java&apos;" description="Rename compilation unit &apos;Sobrinhos.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;modelo.muitospramuitos{Sobrinhos.java" name="Sobrinho.java" references="false" stamp="1637796244735" version="1.0"/>
+</session>

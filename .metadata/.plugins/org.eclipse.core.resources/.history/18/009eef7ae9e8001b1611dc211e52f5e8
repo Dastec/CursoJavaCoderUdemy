@@ -1,0 +1,5 @@
+package Concessionaria.carros;
+
+public class CarroPopular extended{
+
+}

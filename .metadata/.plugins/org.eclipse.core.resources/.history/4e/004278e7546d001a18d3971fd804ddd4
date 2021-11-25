@@ -1,0 +1,29 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioConversao {
+	
+	public static void main(String[] args) {
+		
+		Scanner sal = new Scanner (System.in);
+			
+			System.out.print("Digite o seu primeiro salario: ");
+			String sal1 = sal.nextLine().;
+			//System.out.println("sal1");
+			
+			System.out.print("Digite o seu segundo salario: ");
+			String sal2 = sal.nextLine();
+			//System.out.println(sal2);
+			
+			System.out.print("Digite o seu terceiro salario: ");
+			String sal3= sal.nextLine();
+			//System.out.println(sal3);
+			
+			
+			
+		sal.close();
+		
+	}
+
+}

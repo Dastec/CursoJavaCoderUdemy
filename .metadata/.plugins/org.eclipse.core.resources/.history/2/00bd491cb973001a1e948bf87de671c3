@@ -1,0 +1,40 @@
+package arrays;
+
+import java.util.Scanner;
+
+public class Matriz {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		Scanner entradanum = new Scanner(System.in);
+
+		
+		System.out.print("Digite quantos alunos terâo suas notas lançadas: ");
+		int qtdaluno = entradanum.nextInt();
+		String[] alunos = new String[qtdaluno];
+		
+		System.out.print("\nDigite quantas notas serâo lançadas: ");
+		int qtdnota = entradanum.nextInt();
+		double[] notas = new double[qtdnota];
+		
+		
+		for (int i = 0; i < alunos.length; i++) {
+			System.out.printf("Digite o nome do %dº aluno: ",(i+1));
+			alunos[i] = entrada.nextLine();
+			
+			for (int j = 0; j < notas.length; j++) {
+				System.out.printf("Digite a %dª nota: ",(j+1));
+				notas[j] = entradanum.nextDouble();
+			}
+		}
+		
+		System.out.println(alunos+" ("+notas+")");
+		
+		
+		
+		entradanum.close();
+		entrada.close();
+	}
+
+}

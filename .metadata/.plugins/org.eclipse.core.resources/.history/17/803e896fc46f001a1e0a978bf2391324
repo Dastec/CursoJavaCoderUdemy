@@ -1,0 +1,49 @@
+package controleexercicios;
+
+import java.util.Scanner;
+
+public class ExercicioSwitch {
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		String resp="";
+		System.out.println("Digite um dia especial para você e reponderei porque: ");
+		int dia = entrada.nextInt();
+		
+		switch(dia)
+		{
+		case 03:
+			resp = "Nesse dia você nasceu linda!";
+			break;
+		case 10:
+			resp = "Nesse dia você se casou com seu amado! Dia 10/06/2017";
+			break;
+		case 12:
+			resp = "Nesse dia seu irmão Gleyson nasceu!";
+			break;
+		case 20:
+			resp = "Nesse dia seu amado Daniel nasceu!\nE vocês se casaram no civil!";
+			break;
+		case 21:
+			resp = "Que belo dia em, inicio do seu namoro com seu amado!";
+			break;
+		case 24:
+			resp = "Nesse dia seu irmão Francisco nasceu";
+			break;
+		case 27:
+			resp = "Nesse dia sua mãe nasceu!";
+			break;
+		default:
+			resp = "Desculpa, mas nao tenho lembrança dessa data!";
+			
+			
+		System.out.println(resp);
+			
+		
+			
+		}
+		
+	}
+
+}

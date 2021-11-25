@@ -1,0 +1,14 @@
+package herançaepolimorfismoanimal;
+
+public class Leao extends Animal {
+	
+	@Override
+	public void emitirSom() {
+		System.out.println("Rugindo...");
+	}
+
+	@Override
+	public void locomover() {
+		System.out.println("Correndo...");
+	}
+}

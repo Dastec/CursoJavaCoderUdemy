@@ -1,0 +1,29 @@
+package exerciciobanco;
+
+public class ContaBanco {
+	public String numConta;
+	protected String tipo;
+	private double saldo;
+	private double status;
+	
+	
+	double getSaldo() {
+		return this.saldo;
+	}
+	
+	void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	double getStatus() {
+		return this.status;
+	}
+	
+	void setStatus(double status) {
+		this.status = status;
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;streams.Loja&apos; to &apos;Vendedor&apos;&#x0D;&#x0A;- Original project: &apos;CursoJava13&apos;&#x0D;&#x0A;- Original element: &apos;streams.Loja&apos;&#x0D;&#x0A;- Renamed element: &apos;streams.Vendedor&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Loja&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;streams{Loja.java[Loja" matchStrategy="1" name="Vendedor" qualified="false" references="true" similarDeclarations="false" stamp="1628280759114" textual="false" version="1.0"/>
+</session>

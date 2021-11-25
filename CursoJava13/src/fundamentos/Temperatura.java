@@ -1,0 +1,19 @@
+package fundamentos;
+
+public class Temperatura {
+	public static void main(String[] args) {
+		//(ºF - 32) * 5/9 = ºC)
+		double f=86;
+		final int trdois=32;
+		final double fator=5/9.0;
+				
+		double c = (f-trdois)*(fator);
+		
+		System.out.println("A convesão de "+f+"°F para Celsius é "+c+"°C");
+		
+		f=150;
+		c=(f-trdois)*(fator);
+		System.out.println("A convesão de "+f+"°F para Celsius é "+c+"°C");
+	}
+
+}

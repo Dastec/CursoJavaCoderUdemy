@@ -1,0 +1,12 @@
+package carros;
+
+public class Corsa extends Carro {
+
+	Corsa() {
+
+	}
+
+	Corsa(String nome) {
+		super.nome = nome;
+	}
+}

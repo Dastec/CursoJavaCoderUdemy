@@ -1,0 +1,18 @@
+package Concessionaria.carros;
+
+public class Civic extends Carro, implements CarroLuxo {
+
+ private boolean arcondicionadoLigado;
+ 
+ Civic(){
+   this.arcondicionadoLigado = false;
+ }
+ 
+ public void ligarArcondicionado(){
+   this.arcondicionadoLigado = true;
+ }
+ 
+ public void desligarArcondicionado(){
+   this.arcondicionadoLigado = false;
+ }
+}

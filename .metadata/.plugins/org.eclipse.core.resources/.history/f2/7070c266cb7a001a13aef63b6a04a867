@@ -1,0 +1,32 @@
+package exerciciobanco;
+
+public class ContaTeste {
+	public static void main(String[] args) {
+		
+		
+		/*ContaBanco cp1 = new ContaBanco("CP","Jubileu");
+		ContaBanco cc1 = new ContaBanco("CC","Creuza");
+		
+		ContaBanco cp2 = new ContaBanco("CP","Jubileu");
+		ContaBanco cc2 = new ContaBanco("CC","Creuza");*/
+		
+		ContaBanco cp1 = new ContaBanco();
+		ContaBanco cp2 = new ContaBanco();
+		ContaBanco cc1 = new ContaBanco();
+		
+		
+
+		cc1.abrirConta("CC","Creuza");
+		cp1.abrirConta("CP","Jubile");
+		cp2.abrirConta("CP","Jubile");
+		
+		cp1.encerrarConta();
+		
+		cp2.getSaldo();
+		cp2.pagarMensalidade();
+
+
+		
+	}
+
+}

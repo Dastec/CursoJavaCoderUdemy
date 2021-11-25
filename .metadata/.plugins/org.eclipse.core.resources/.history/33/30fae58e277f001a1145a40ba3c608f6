@@ -1,0 +1,8 @@
+package aps;
+
+import javafx.fxml.FXML;
+
+public class PesquisaLocalControle {
+	
+
+}

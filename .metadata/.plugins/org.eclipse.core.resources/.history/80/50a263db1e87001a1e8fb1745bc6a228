@@ -1,0 +1,13 @@
+package herancaepolimorfismo;
+
+public class Empregado extends Pessoa{
+
+	Empregado(String nome, String endereco, String telefone) {
+		super(nome, endereco, telefone);
+	}
+	Empregado(String nome) {
+		super(nome);
+	}
+	
+
+}

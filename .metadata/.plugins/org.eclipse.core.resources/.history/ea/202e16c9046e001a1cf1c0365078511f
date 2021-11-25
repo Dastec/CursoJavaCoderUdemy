@@ -1,0 +1,21 @@
+package fundamentos.operadores;
+import java.util.Scanner;
+
+public class DesafioLogicos {
+	public static void main(String[] args) {
+		//Trabalho na terça (V ou F)
+		//Trabalho na quinta (v ou F)
+		
+		boolean trabalho1 = true;
+		boolean trabalho2 = true;
+		
+		
+		System.out.println(trabalho1 && trabalho2 +" Tv 50 polegas e sorvete");
+		System.out.println(trabalho1 || trabalho2 +
+				"tv 32 polegadas e sorvete");
+		
+	
+		
+	}
+
+}

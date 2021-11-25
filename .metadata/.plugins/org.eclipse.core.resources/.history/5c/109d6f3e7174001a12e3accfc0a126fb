@@ -1,0 +1,9 @@
+package classe;
+
+public class EqualsHashcode {
+	
+	Usuario u1 = new Usuario();
+	u1.nome = "Pedro Silva";
+	u2.email = "pedro.silva@ezemail.com.br";
+
+}

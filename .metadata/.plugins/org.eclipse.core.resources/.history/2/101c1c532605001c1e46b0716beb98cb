@@ -1,0 +1,17 @@
+package br.com.dastec.calc.visao;
+
+
+import javax.swing.JFrame;
+
+@SuppressWarnings("serial")
+public class Calculadora extends JFrame{
+
+	public Calculadora(){
+		setVisible(true);
+		setSize(350, 550);
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

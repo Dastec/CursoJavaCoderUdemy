@@ -1,0 +1,16 @@
+package controleexercicios;
+
+import java.util.Scanner;
+
+public class Exercicio08 {
+	public static void main(String[] args) {
+		
+		Scanner entrada = Scanner(System.in);
+		
+		System.out.print("Digite uma palavra: ");
+		String resp = entrada.next();
+		
+	
+	}
+
+}

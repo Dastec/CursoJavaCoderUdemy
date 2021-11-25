@@ -1,0 +1,20 @@
+package herançaepolimorfismoanimal;
+
+public class Veterinario{
+
+	public void examinar(String animal) {
+		if (animal.equalsIgnoreCase("Cachorro"))
+			System.out.println("Latindo...");
+		else if (animal.equalsIgnoreCase("Cavalo"))
+			System.out.println("Relinchando...");
+		else if (animal.equalsIgnoreCase("Preguiça"))
+			System.out.println("Som de preguiça...");
+		else if (animal.equalsIgnoreCase("Leão"))
+			System.out.println("Rugindo...");
+		else if (animal.equalsIgnoreCase("Gato"))
+			System.out.println("Miando...");
+		else if (animal.equalsIgnoreCase("Sapo"))
+			System.out.println("Coaxando...");
+	}
+
+}

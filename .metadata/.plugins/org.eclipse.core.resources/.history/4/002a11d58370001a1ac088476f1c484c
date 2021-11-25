@@ -1,0 +1,26 @@
+package classe;
+
+public class DataTeste {
+	
+	public static void main(String[] args) {
+		
+		Data dt1 = new Data();
+		
+		dt1.dia = 20;
+		dt1.mes = 11;
+		dt1.ano = 1991;
+		
+		Data dt2 = new Data();
+		
+		dt2.dia = 03;
+		dt2.mes = 06;
+		dt2.ano = 1994;
+		
+		System.out.printf("%d/%s/%d",dt1.dia,dt1.mes,dt1.ano);
+		System.out.printf("\n%d/%s/%d\n\n",dt2.dia,dt2.mes,dt2.ano);
+		System.out.printf(dt1.obterDataFormatada());
+		System.out.printf(dt2.obterDataFormatada());
+	
+	}
+
+}

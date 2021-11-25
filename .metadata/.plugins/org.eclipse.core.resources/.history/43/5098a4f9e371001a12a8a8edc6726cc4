@@ -1,0 +1,37 @@
+package classedesafio;
+
+public class Jantar {
+	 public static void main(String[] args) {
+
+
+	     Pessoa p1 = new Pessoa();
+	     p1.nome = "Gleyciane";
+	     p1.peso = 48;
+	     
+	     
+	     
+	     Comida c1 = new Comida("Arroz", 0.200);
+	    // c1.nomecomida = "Arroz";
+	     //c1.pesocomida = 0.200;
+	    
+	     Comida c2 = new Comida("Feijão", 0.150);
+	     //c2.nomecomida = "Feijão";
+	     //c2.pesocomida = 0.150;
+	     
+	     Comida c3 = new Comida("Bife", 0.100);
+	     //c3.nomecomida = "Bife";
+	     //c3.pesocomida = 0.100;
+	     
+	     double novopeso = p1.comer(c1.pesocomida);
+	     novopeso=p1.comer(c2.pesocomida);
+	     novopeso=p1.comer(c3.pesocomida);
+
+	     System.out.printf("%s\n%.2fkg",p1.nome,novopeso);
+	     
+	     
+	     
+	     
+	     
+
+	  }
+}

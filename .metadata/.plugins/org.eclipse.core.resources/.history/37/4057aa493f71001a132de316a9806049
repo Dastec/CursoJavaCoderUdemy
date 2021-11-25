@@ -1,0 +1,12 @@
+package classe;
+
+public class PrimeiroTrauma {
+	int a = 3; //nao pode mexer
+	
+	
+	public static void main(String[] args) {
+		
+		static System.out.println(a);
+	}
+
+}

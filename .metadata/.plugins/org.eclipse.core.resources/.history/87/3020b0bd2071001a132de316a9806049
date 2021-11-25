@@ -1,0 +1,26 @@
+package classe;
+
+import java.util.Scanner;
+
+public class ProdutoTeste {
+
+  public static void main(String[] args) {
+  
+  //Scanner entrada = new Scanner(System.in);
+  
+  Produto p1 = new Produto ();
+  
+  p1.idproduto = p1.idProdutoFinal();
+  p1.nome = p1.nomeFinal();
+  p1.descricao = p1.descricaoFinal();
+  p1.preco = p1.precoFinal();
+  p1.quantidade = p1.quantidadeFinal();
+  
+  System.out.println("\n\n-------ESTOQUE-------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d\n ",p1.idproduto,p1.nome, p1.descricao,p1.preco,p1.quantidade);
+  System.out.print("-------------------------");
+  
+
+  }
+
+}

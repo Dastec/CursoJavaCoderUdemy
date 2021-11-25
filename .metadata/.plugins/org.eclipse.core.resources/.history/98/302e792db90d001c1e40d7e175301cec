@@ -1,0 +1,80 @@
+package jdbc;
+
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class UpdatePorParametro {
+
+	public static void main(String[] args) throws SQLException {
+
+		Scanner entrada = new Scanner(System.in);
+
+		String resposta;
+		String resp = "";
+
+		System.out.print("Deseja fazer uma busca ou um Update ou Sair?\nDigite sua escolha: b/u/s ->  ");
+		resposta = entrada.next();
+
+		while (!resposta.equalsIgnoreCase("s")){
+
+			if (resposta.equalsIgnoreCase("b")) {
+				System.out.print("Você deseja buscar por codigo ou nome?\nDigite  sua escolha c/n -> ");
+				resp = entrada.next();
+
+				while (!resp.equalsIgnoreCase("u")) {
+
+					if (resp.equalsIgnoreCase("c")) {
+						int codigo;
+						System.out.print("Digite o codigo: ");
+						codigo = entrada.nextInt();
+						UpdateMetodos.selectPorCodigo(codigo);
+
+						System.out.println("Deseja fazer outra busca ou um Update ou Sair?\nDigite sua escolha: b/u/s -> ");
+						resp = entrada.next();
+
+						if (resp.equalsIgnoreCase("s")) {
+							System.out.println("Você saiu do sistema!");
+							return;
+						}else if (resp.equalsIgnoreCase("u")) {
+							resposta = "u";	
+						}else if (resp.equalsIgnoreCase("b")) {
+							break;
+						}else {
+							System.out.println("Opção invalida! Você saiu do sistema!");
+							return;
+						}
+
+					} else if (resp.equalsIgnoreCase("n")) {
+						String nome;
+						System.out.print("Digite o nome: ");
+						nome = entrada.next();
+						UpdateMetodos.selectPorNome(nome);
+						
+						System.out.println("Deseja fazer outra busca ou um Update ou Sair?\nDigite sua escolha: b/u/s -> ");
+						resp = entrada.next();
+
+						if (resp.equalsIgnoreCase("s")) {
+							System.out.println("Você saiu do sistema!");
+							return;
+						}else if (resp.equalsIgnoreCase("u")) {
+							resposta = "u";	
+						}else if (resp.equalsIgnoreCase("b")) {
+							break;
+						}else {
+							System.out.println("Opção invalida! Você saiu do sistema!");
+							return;
+						}
+					}
+				}
+			} 
+			else if (resposta.equalsIgnoreCase("u")) {
+				System.out.println("Deu certo");
+			}else {
+				System.out.println("Opção invalida! Você saiu do sistema!");
+				return;
+			}
+		}
+		System.out.println("Você saiu do sistema!");
+		entrada.close();
+	}//main
+}

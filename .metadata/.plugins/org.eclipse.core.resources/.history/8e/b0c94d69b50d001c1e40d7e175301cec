@@ -1,0 +1,67 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class UpdateMetodos {
+
+	static Connection conexao = FabricaConexao.getConexao();
+	
+	
+	public static void selectPorCodigo(int codigo) throws SQLException{
+		String sql = "SELECT * FROM pessoas WHERE codigo = ?";
+		PreparedStatement sttm = conexao.prepareStatement(sql);
+		sttm.setInt(1, codigo);
+		ResultSet resultado = sttm.executeQuery();
+		
+		while (resultado.next()) {
+			int codigo2 = resultado.getInt("codigo");
+			String nome2 = resultado.getString("nome");
+			
+			Pessoa p = new Pessoa(codigo2, nome2);
+			
+			System.out.println("\n"+p.getCodigo() +" | "+ p.getNome()+"\n");
+		}
+		
+		sttm.close();
+	}
+	
+	public static void selectPorNome(String nome ) throws SQLException{
+		String sql = "SELECT * FROM pessoas WHERE nome LIKE ?";
+		PreparedStatement sttm = conexao.prepareStatement(sql);
+		sttm.setString(1, "%"+nome+"%");
+		ResultSet resultado = sttm.executeQuery();
+		
+		while (resultado.next()) {
+			int codigo2 = resultado.getInt("codigo");
+			String nome2 = resultado.getString("nome");
+			
+			Pessoa p = new Pessoa(codigo2, nome2);
+			
+			System.out.println("\n"+p.getCodigo() +" | "+ p.getNome()+"\n");
+		}
+	}
+	
+	public static void updatePorCodigo(int codigo, String novoNome) throws SQLException {
+		String sql =  "UPDATE pessoas SET codigo ? = ?";
+		PreparedStatement sttm = conexao.prepareStatement(sql);
+		sttm.setInt(1, codigo);
+		sttm.setString(2, novoNome);
+		sttm.execute();
+		System.out.println("Atualizado com sucesso!");
+	}
+	
+	public static void updatePorNome(String nome, String novoNome) throws SQLException {
+		String sql =  "UPDATE pessoas SET nome ? = ?";
+		PreparedStatement sttm = conexao.prepareStatement(sql);
+		sttm.setString(1, nome);
+		sttm.setString(2, novoNome);
+		sttm.execute();
+		System.out.println("Atualizado com sucesso!");
+	}
+	
+	
+
+}

@@ -1,0 +1,23 @@
+package modelo.umpramuito;
+
+import java.util.Date;
+
+public class Pedido {
+	
+	private Long id;
+	
+	private Date data;
+
+	public Pedido() {
+		
+	}
+	
+	public Pedido(Date data) {
+		super();
+		this.data = data;
+	}
+	
+	
+	
+	
+}

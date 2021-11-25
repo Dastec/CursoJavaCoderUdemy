@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;resp2&apos; in &apos;jdbc.UpdatePorParametro.main(...)&apos; to &apos;resp&apos;&#x0D;&#x0A;- Original project: &apos;CursoJava13&apos;&#x0D;&#x0A;- Original element: &apos;jdbc.UpdatePorParametro.main(String[]).resp2&apos;&#x0D;&#x0A;- Renamed element: &apos;resp2&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;resp2&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;jdbc{UpdatePorParametro.java[UpdatePorParametro~main~\[QString;@resp2!236!248!243!247!QString;!0!false" name="resp" references="true" stamp="1630782156313" version="1.0"/>
+</session>

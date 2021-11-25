@@ -1,0 +1,13 @@
+package composicao;
+
+import java.util.List;
+
+public class Compra {
+	
+	List<Item> itens;
+	
+	double obterValorTotal() {
+		return 0;
+		
+	}
+}

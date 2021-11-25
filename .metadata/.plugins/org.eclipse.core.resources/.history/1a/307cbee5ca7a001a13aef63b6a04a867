@@ -1,0 +1,132 @@
+package exerciciobanco;
+
+public class ContaBanco {
+	public int numConta = 0;
+	protected String tipo;
+	private double saldo;
+	private boolean status = false;
+	private String nome;
+	
+
+	void getSaldo() {
+		if(status == true) 
+		{
+		System.out.printf("Saldo: R$%.2f\n",this.saldo);
+		}
+		else System.out.println("");
+	}
+	
+	void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	boolean getStatus() {
+		return this.status;
+	}
+	
+	void setStatus(boolean status) {
+		this.status = status;
+	}
+	
+	void abrirConta() {
+		this.status = true;; 
+	}
+	
+	String getNome () {
+		return this.nome;
+	}
+	
+	void setNome (String nome) {
+		this.nome = nome;
+	}
+	
+	void abrirConta(String tipo, String nome)
+	{
+		if (tipo.equalsIgnoreCase("cp"))
+		{
+			if(status == false) 
+			{
+				this.tipo = "CP";
+				this.saldo = 50;
+				this.status = true;
+				this.numConta += 1;
+				this.nome = nome;
+				System.out.printf("%s %s Nº%d aberta com sucesso!\nSaldo: R$%.2f\n\n\n",this.nome,this.tipo,this.numConta,this.saldo);	
+			}
+			else System.out.println("Essa conta já está aberta!");		
+		}
+		else if (tipo.equalsIgnoreCase("cc")) 
+		{
+			if(status == false) 
+			{
+				this.tipo = "CC";
+				this.saldo = 150;
+				this.status = true;
+				this.numConta += 1;
+				this.nome = nome;
+				System.out.printf("%s %s Nº%d aberta com sucesso!\nSaldo: R$%.2f\n\n\n",this.nome,this.tipo,this.numConta,this.saldo);	
+			}
+			else System.out.println("Essa conta já está aberta!");
+		}else System.out.println("Tipo invalido!");	
+	}
+	
+	void depositar(double valor)
+	{
+		if (status == true) 
+		{
+		this.saldo += valor;
+		}
+		else System.out.println("Essa conta não existe!");
+	}
+	
+	void sacar(double valor) 
+	{
+		if (status == true) 
+		{
+			if (saldo >= valor) 
+			{
+			this.saldo -= valor;
+			}
+			else System.out.println("Saldo insuficiente!");
+		}
+		else System.out.println("Essa conta não existe!");
+	}
+	
+	void encerrarConta() 
+	{
+		if (status == true) {
+			status = false;
+			nome = "";
+			saldo = 0;
+			numConta = 0;
+			tipo = " ";
+		}
+		else System.out.println("Conta não existe!");
+	}
+	void pagarMensalidade() 
+	{
+		if (status == true) 
+		{
+			if(tipo.equalsIgnoreCase("cc"))
+				if (saldo >= 20) 
+				{
+				this.saldo -= 20;
+				}
+				else System.out.println("Saldo insuficiente!");
+			if(tipo.equalsIgnoreCase("cp"))
+				if (saldo >= 12) 
+				{
+				this.saldo -= 12;
+				}
+				else System.out.println("Saldo insuficiente!");
+		}
+		else System.out.println("Essa conta não existe!");
+	}
+}
+
+	
+
+	
+	
+
+

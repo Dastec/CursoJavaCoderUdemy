@@ -1,0 +1,29 @@
+package Concessionaria.carros;
+
+public class Ferrari extends Carro implements CarroEsportivo, CarroEsportivo {
+ 
+ private boolean arcondicionadoLigado;
+ private boolean turboLigado;
+ 
+ Ferrari(){
+   this.arcondicionadoLigado = false;
+   this.turboLigado = false;
+   
+ }
+ 
+ public void ligarArcondicionado(){
+   this.arcondicionadoLigado = true;
+ }
+ 
+ public void desligarArcondicionado(){
+   this.arcondicionadoLigado = false;
+ }
+ 
+ public void ligarTurbo(){
+   this.turboLigado = true;
+ }
+ 
+ public void desligarTurbo(){
+   this.turboLigado = false;
+ }
+}

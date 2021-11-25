@@ -1,0 +1,49 @@
+package composicao;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto("Caneta", 2.75);
+		Produto p2 = new Produto("Caderno", 22.30);
+		Produto p3 = new Produto("Lapis", 1.35);
+		
+		Produto p4 = new Produto("Computador", 2000.00);
+		Produto p5 = new Produto("Impressora", 750.00);
+		Produto p6 = new Produto("Cartucho Black", 77.00);
+		
+		Item i1 = new Item(3, p1);
+		Item i2 = new Item(1, p2);
+		Item i3 = new Item(2, p3);
+		
+		Item i4 = new Item(1, p4);
+		Item i5 = new Item(1, p5);
+		Item i6 = new Item(2, p6);
+		
+		
+		
+		Cliente cliente1 = new Cliente("Roberta");
+		
+		Compra compra1 = new Compra();
+		Compra compra2 = new Compra();
+		
+		cliente1.comprar(compra1);
+		cliente1.comprar(compra2);
+		
+		
+		compra1.inserirItem(i1);
+		compra1.inserirItem(i2);
+		compra1.inserirItem(i3);
+		
+		compra2.inserirItem(i4);
+		compra2.inserirItem(i5);
+		compra2.inserirItem(i6);
+		
+		System.out.println(compra1.obterValorTotalPorCompra(compra1));
+		System.out.println(compra2.obterValorTotalPorCompra(compra2));
+		
+		System.out.println("Valot total R$" + cliente1.obterValorTotal(cliente1));
+		
+		
+		
+	}
+}

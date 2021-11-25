@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class DesafioArray {
+
+	public static void main(String[] args) {
+		int resp;
+		double media = 0;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite quantas notas vão ser digitadas");
+		resp = entrada.nextInt();
+		
+		double[] notas = new double[resp];
+		
+		for(int i = 1; i<=notas.length; i++) {
+			notas[i] = entrada.nextDouble();
+		}
+		
+		for(double nota: notas) {
+			media+=nota;
+		}
+		media = media/notas.length;
+		System.out.printf("À média é %2f",media);
+	}
+}

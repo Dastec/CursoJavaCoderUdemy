@@ -1,0 +1,17 @@
+package exerciciobanco;
+
+public class Cliente {
+	private String nome;
+	
+	
+	String getNome () {
+		return this.nome;
+	}
+	
+	void setNome (String nome) {
+		this.nome = nome;
+	}
+
+	
+
+}

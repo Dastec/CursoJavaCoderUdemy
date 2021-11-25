@@ -1,0 +1,157 @@
+package classe;
+
+//import java.util.Scanner;
+
+public class ProdutoTeste {
+
+  public static void main(String[] args) {
+  
+  //Scanner entrada = new Scanner(System.in);
+  
+  Produto p1 = new Produto ();
+  p1.idproduto = p1.idProdutoFinal();
+  p1.nome = p1.nomeFinal();
+  p1.descricao = p1.descricaoFinal();
+  p1.preco = p1.precoFinal();
+  p1.quantidade = p1.quantidadeFinal();
+  System.out.println("");
+  
+  Produto p2 = new Produto();
+  p2.idproduto = p2.idProdutoFinal();
+  p2.nome = p2.nomeFinal();
+  p2.descricao = p2.descricaoFinal();
+  p2.preco = p2.precoFinal();
+  p2.quantidade = p2.quantidadeFinal();
+  
+  
+  
+  Produto p3 = new Produto();
+  p3.idproduto = p3.idProdutoFinal();
+  p3.nome = p3.nomeFinal();
+  p3.descricao = p3.descricaoFinal();
+  p3.preco = p3.precoFinal();
+  p3.quantidade = p3.quantidadeFinal();
+  
+  
+  Produto p4 = new Produto();
+  p4.idproduto = p4.idProdutoFinal();
+  p4.nome = p4.nomeFinal();
+  p4.descricao = p4.descricaoFinal();
+  p4.preco = p4.precoFinal();
+  p4.quantidade = p4.quantidadeFinal();
+  
+  
+  
+  Produto p5 = new Produto();
+  p5.idproduto = p5.idProdutoFinal();
+  p5.nome = p5.nomeFinal();
+  p5.descricao = p5.descricaoFinal();
+  p5.preco = p5.precoFinal();
+  p5.quantidade = p5.quantidadeFinal();
+  
+  
+  
+  Produto p6 = new Produto();
+  p6.idproduto = p6.idProdutoFinal();
+  p6.nome = p6.nomeFinal();
+  p6.descricao = p6.descricaoFinal();
+  p6.preco = p6.precoFinal();
+  p6.quantidade = p6.quantidadeFinal();
+  
+  
+  
+  Produto p7 = new Produto();
+  p7.idproduto = p7.idProdutoFinal();
+  p7.nome = p7.nomeFinal();
+  p7.descricao = p7.descricaoFinal();
+  p7.preco = p7.precoFinal();
+  p7.quantidade = p7.quantidadeFinal();
+  
+  
+  
+  Produto p8 = new Produto();
+  p8.idproduto = p8.idProdutoFinal();
+  p8.nome = p8.nomeFinal();
+  p8.descricao = p8.descricaoFinal();
+  p8.preco = p8.precoFinal();
+  p8.quantidade = p8.quantidadeFinal();
+  
+  
+  
+  Produto p9 = new Produto();
+  p9.idproduto = p9.idProdutoFinal();
+  p9.nome = p9.nomeFinal();
+  p9.descricao = p9.descricaoFinal();
+  p9.preco = p9.precoFinal();
+  p9.quantidade = p9.quantidadeFinal();
+  
+  
+  Produto p10 = new Produto();
+  p10.idproduto = p10.idProdutoFinal();
+  p10.nome = p10.nomeFinal();
+  p10.descricao = p10.descricaoFinal();
+  p10.preco = p10.precoFinal();
+  p10.quantidade = p10.quantidadeFinal();
+  
+  
+  
+  System.out.println("\n\n-------ESTOQUE-------");
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d "
+		  ,p1.idproduto,p1.nome, p1.descricao,p1.preco,p1.quantidade);
+  System.out.print("\n-------------------------");
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d\n "
+		  ,p1.idproduto,p2.nome, p2.descricao,p2.preco,p2.quantidade);
+  System.out.print("-------------------------");
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d\n "
+		  ,p3.idproduto,p3.nome, p3.descricao,p3.preco,p3.quantidade);
+  System.out.print("\n-------------------------");
+  
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d "
+		  ,p1.idproduto,p4.nome, p4.descricao,p4.preco,p4.quantidade);
+  System.out.print("\n-------------------------");
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d "
+		  ,p1.idproduto,p5.nome, p5.descricao,p5.preco,p5.quantidade);
+  System.out.print("\n-------------------------");
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d "
+		  ,p1.idproduto,p6.nome, p6.descricao,p6.preco,p6.quantidade);
+  System.out.print("\n-------------------------");
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d "
+		  ,p1.idproduto,p7.nome, p7.descricao,p7.preco,p7.quantidade);
+  System.out.print("\n-------------------------");
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d "
+		  ,p1.idproduto,p8.nome, p8.descricao,p8.preco,p8.quantidade);
+  System.out.print("\n-------------------------");
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d "
+		  ,p1.idproduto,p9.nome, p9.descricao,p9.preco,p9.quantidade);
+  System.out.print("\n-------------------------");
+  
+  
+  System.out.println("\n\n-------------------------");
+  System.out.printf("Código: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\nQuantidade: %d "
+		  ,p1.idproduto,p10.nome, p10.descricao,p10.preco,p10.quantidade);
+  System.out.print("\n-------------------------");
+  
+  
+  
+  
+  }
+
+}

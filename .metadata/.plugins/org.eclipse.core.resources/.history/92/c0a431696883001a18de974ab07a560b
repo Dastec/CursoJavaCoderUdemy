@@ -1,0 +1,20 @@
+package encapsulamento;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Calculadora c1 = new Calculadora();
+		
+		c1.setValorA(21);
+		c1.setValorB(5);
+		
+		System.out.println("Soma: "+c1.soma());
+		System.out.println("Subtração: "+c1.subtracao());
+		System.out.println("Divisão: "+c1.divisao());
+		System.out.println("Multiplicação: "+c1.multiplicao());
+		c1.fatorial();
+
+	}
+
+}

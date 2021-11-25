@@ -1,0 +1,128 @@
+package exerciciobanco;
+
+public class ContaBanco {
+	public int numConta = 0;
+	protected String tipo;
+	private double saldo;
+	private boolean status = false;
+	private String nome;
+	
+
+	
+	/*ContaBanco(String tipo, String nome){
+		if (tipo == "CC" ||tipo == "cc"){
+			this.tipo = "Conta Poupança";
+			this.saldo = 50;
+			this.status = true;
+			numConta += 1;
+			this.nome = nome;
+		}
+		else if (tipo == "CP"||tipo == "cc") {
+			this.tipo = "Conta Corrente";
+			this.saldo = 150;
+			this.status = true;
+			this.numConta += 1;
+			this.nome = nome;
+		}else System.out.println("Tipo invalido!");
+	}*/
+	
+	
+	double getSaldo() {
+		if(status == true) 
+		{
+		return this.saldo;
+		}
+		return 0;
+	}
+	
+	void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	boolean getStatus() {
+		return this.status;
+	}
+	
+	void setStatus(boolean status) {
+		this.status = status;
+	}
+	
+	void abrirConta() {
+		this.status = true;; 
+	}
+	
+	String getNome () {
+		return this.nome;
+	}
+	
+	void setNome (String nome) {
+		this.nome = nome;
+	}
+	
+	void abrirConta(String tipo, String nome)
+	{
+		if (tipo.equalsIgnoreCase("cp"))
+		{
+			if(status == false) 
+			{
+				this.tipo = "Conta Poupança";
+				this.saldo = 50;
+				this.status = true;
+				this.numConta += 1;
+				this.nome = nome;
+				System.out.printf("%s %s Nº%d aberta com sucesso!\nSaldo: R$%.2f\n\n\n",this.nome,this.tipo,this.numConta,this.saldo);	
+			}
+			else System.out.println("Essa conta já está aberta!");		
+		}
+		else if (tipo.equalsIgnoreCase("cc")) 
+		{
+			if(status == false) 
+			{
+				this.tipo = "Conta Corrente";
+				this.saldo = 150;
+				this.status = true;
+				this.numConta += 1;
+				this.nome = nome;
+				System.out.printf("%s %s Nº%d aberta com sucesso!\nSaldo: R$%.2f\n\n\n",this.nome,this.tipo,this.numConta,this.saldo);	
+			}
+			else System.out.println("Essa conta já está aberta!");
+		}else System.out.println("Tipo invalido!");	
+	}
+	
+	void depositar(double valor)
+	{
+		if (status == true) 
+		{
+		this.saldo += valor;
+		}
+		else System.out.println("Essa conta não existe");
+	}
+	
+	void sacar(double valor) 
+	{
+		if (status == true) 
+		{
+		this.saldo -= valor;
+		}
+		else System.out.println("Essa conta não existe");
+	}
+	
+	void encerrarConta() {
+		if (status == true) {
+			status = false;
+			nome = "";
+			saldo = 0;
+			numConta = 0;
+			tipo = " ";
+		}
+		else System.out.println("Conta não existe!");
+		
+	}
+}
+
+	
+
+	
+	
+
+

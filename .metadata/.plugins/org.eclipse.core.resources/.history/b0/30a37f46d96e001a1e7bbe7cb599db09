@@ -1,0 +1,15 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioDiaSemana {
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Escreva o dia da semana: ");
+		String dia = entrada.next();
+		System.out.println(dia);
+	}
+
+}

@@ -1,0 +1,13 @@
+package br.com.dastec.calc.visao;
+
+import java.awt.GridLayout;
+
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class Teclado extends JPanel {
+	
+	public Teclado() {
+		setLayout(new GridLayout(5, 4));
+	}
+}

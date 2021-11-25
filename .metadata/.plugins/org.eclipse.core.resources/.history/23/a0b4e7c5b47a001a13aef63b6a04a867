@@ -1,0 +1,13 @@
+package exerciciobanco;
+
+public class ContaTeste {
+	public static void main(String[] args) {
+		
+		ContaBanco cp1 = new ContaBanco("CP","Jubileu");
+		ContaBanco cc1 = new ContaBanco("CC","Creuza");
+		
+		System.out.printf("R$%.2f\n",cp1.getSaldo());
+		System.out.printf("R$%.2f\n",cc1.getSaldo());
+	}
+
+}

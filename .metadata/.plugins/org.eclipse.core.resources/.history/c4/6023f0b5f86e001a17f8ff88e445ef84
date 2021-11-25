@@ -1,0 +1,16 @@
+package controle;
+
+public class DesafioFor {
+	
+	public static void main(String[] args) {
+			
+		String valor = "#";
+		for(String i = ""; !i.contentEquals("#####");i=(i+valor))
+		{
+			System.out.println(i);
+		}
+		
+	}
+	// Versao do desafio
+	// Não pode usar numeros para controlar o laço
+}

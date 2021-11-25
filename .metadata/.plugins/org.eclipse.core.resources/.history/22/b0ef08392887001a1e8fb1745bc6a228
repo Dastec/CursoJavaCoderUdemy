@@ -1,0 +1,31 @@
+package herancaepolimorfismo;
+
+public class Operario extends Empregado{
+	protected double valorProducao;
+	
+	Operario(){
+		
+	}
+
+	Operario(String nome, String endereco, String telefone) {
+		super(nome, endereco, telefone);
+	}
+	Operario(String nome) {
+		super(nome);
+	}
+	public double getValorProducao() {
+		return valorProducao;
+	}
+	public void setValorProducao(double valorProducao) {
+		this.valorProducao = valorProducao;
+	}
+	@Override
+	public double calcularSalario() {
+		double salarioLiquido = this.salarioBase-(this.imposto/100);
+		salarioLiquido += this.valorProducao;
+		return salarioLiquido;
+	}
+	
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;desafiovariavelconstante.Conversor&apos; to &apos;ConversorTemperaratura&apos;&#x0D;&#x0A;- Original project: &apos;RevisaoDesafios&apos;&#x0D;&#x0A;- Original element: &apos;desafiovariavelconstante.Conversor&apos;&#x0D;&#x0A;- Renamed element: &apos;desafiovariavelconstante.ConversorTemperaratura&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Conversor&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;desafiovariavelconstante{Conversor.java[Conversor" matchStrategy="1" name="ConversorTemperaratura" qualified="false" references="true" similarDeclarations="false" stamp="1614126362666" textual="false" version="1.0"/>
+</session>

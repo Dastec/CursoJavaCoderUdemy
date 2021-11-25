@@ -1,0 +1,16 @@
+package controleexercicios;
+
+import java.util.Date;
+
+public class Exercicio02 {
+	public static void main(String[] args) {
+		
+		Date ano = new Date();
+		int anoatual = ano.getYear();
+		
+		
+		System.out.println(ano);
+		System.out.println(anoatual);
+	}
+
+}

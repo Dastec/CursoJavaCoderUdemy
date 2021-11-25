@@ -1,0 +1,52 @@
+package herançaepolimorfismoanimal;
+
+public class Zoologico {
+	public static void main(String[] args) {
+		
+		Veterinario.examinar("Cachorro");	
+		Veterinario.examinar("Cavalo");	
+		Veterinario.examinar("Preguiça");	
+		Veterinario.examinar("Leão");	
+		Veterinario.examinar("Gato");	
+		Veterinario.examinar("Sapo");	
+		System.out.println();
+
+		String[] jaula = {"Cachorro", "Cavalo", "Preguiça","Leão","Gato","Sapo","Cavalo","Cachorro","Sapo","Gato"};
+	
+		for(
+		String animal:jaula)
+		{
+			if (animal.equalsIgnoreCase("Cachorro")) {
+				System.out.println(animal);
+				System.out.println("Latindo...");
+				System.out.println("Correndo...\n");
+				continue;
+			} else if (animal.equalsIgnoreCase("Cavalo")) {
+				System.out.println(animal);
+				System.out.println("Relinchando...");
+				System.out.println("Correndo...\n");
+				continue;
+			} else if (animal.equalsIgnoreCase("Preguiça")) {
+				System.out.println(animal);
+				System.out.println("Som de preguiça...");
+				System.out.println("Subindo Arvore...\n");
+				continue;
+			} else if (animal.equalsIgnoreCase("Leão")) {
+				System.out.println(animal);
+				System.out.println("Rugindo...");
+				System.out.println("Correndo...\n");
+				continue;
+			} else if (animal.equalsIgnoreCase("Gato")) {
+				System.out.println(animal);
+				System.out.println("Miando...");
+				System.out.println("Correndo...\n");
+				continue;
+			} else if (animal.equalsIgnoreCase("Sapo")) {
+				System.out.println(animal);
+				System.out.println("Coaxando...");
+				System.out.println("Pulando...\n");
+				continue;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+package br.com.dastec.calc.visao;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class Display extends JPanel {
+
+	private JLabel label;
+	public Display() {
+		label = new JLabel("1234,57");
+	}
+	
+	
+}

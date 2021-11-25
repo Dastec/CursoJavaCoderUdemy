@@ -1,0 +1,34 @@
+package classe;
+
+import java.util.Scanner;
+
+public class Caixa {
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		Scanner entradanum = new Scanner(System.in);
+		
+		System.out.print("Deseja iniciar uma venda: S/N: ");
+		String resp = entrada.next();
+		
+		if (resp.equalsIgnoreCase("s")) 
+		{
+			while(resp.equalsIgnoreCase("s")) 
+			{
+				System.out.println("Nova venda Iniciada!");
+				
+				
+				System.out.print("Deseja iniciar uma venda: S/N: ");
+				resp = entrada.next();
+			}
+			
+			
+	 		
+		}
+		
+		
+		
+		
+	}//main
+
+}

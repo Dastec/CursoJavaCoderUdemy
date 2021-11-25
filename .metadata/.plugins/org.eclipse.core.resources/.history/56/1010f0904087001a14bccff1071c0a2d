@@ -1,0 +1,8 @@
+package herançaepolimorfismoanimal;
+
+public class Cavalo {
+	@Override
+	public void emitirSom() {
+		System.out.println("Au Au Au Au");
+	}
+}

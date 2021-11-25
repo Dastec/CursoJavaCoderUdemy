@@ -1,0 +1,47 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioMediaSala {
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		int notavalida = 0;
+		int total = 0;
+		
+		System.out.print("Digite uma nota: ");
+		double nota = entrada.nextDouble();
+		
+		while(nota != -1)
+		{
+			if(nota>= 0 && nota <= 10)
+			{
+				notavalida++;
+				total+=nota;
+			}
+			else
+			{
+				System.out.println("Nota inválida!");
+			}
+		System.out.print("Digite uma nota: ");
+		nota = entrada.nextDouble();
+		}
+		
+		double media = total/notavalida;
+		
+	System.out.printf("A média da turma foi %f e foi digitado %d notas válidas!"
+			,media,notavalida);
+		
+		
+		
+		
+		
+		
+		
+		entrada.close();
+		
+		
+	}
+
+}

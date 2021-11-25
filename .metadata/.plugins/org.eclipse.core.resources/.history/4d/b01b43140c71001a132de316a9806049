@@ -1,0 +1,23 @@
+package classe;
+
+import java.util.Scanner;
+
+public class Produto {
+
+    int idproduto;
+    String nome;
+    String descricao;
+    double preco;
+    double desconto;
+    int quantidade;
+    int vendidos;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    double precoFinal(){
+      preco = entrada.nextDouble();
+      
+      return preco;
+    }
+
+}

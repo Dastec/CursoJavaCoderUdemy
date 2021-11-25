@@ -1,0 +1,12 @@
+package exerciciobanco;
+
+public class ContaTeste {
+	public static void main(String[] args) {
+		
+		ContaBanco cp1 = new ContaBanco("CP","Jubileu");
+		
+		System.out.println(cp1.getSaldo());
+		
+	}
+
+}

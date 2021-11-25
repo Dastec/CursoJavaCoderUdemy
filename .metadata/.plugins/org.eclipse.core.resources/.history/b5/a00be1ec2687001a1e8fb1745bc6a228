@@ -1,0 +1,27 @@
+package herancaepolimorfismo;
+
+public class Administrador extends Empregado {
+	
+	private double ajudaDeCusto;
+
+	Administrador(String nome, String endereco, String telefone) {
+		super(nome, endereco, telefone);
+	}
+	Administrador(String nome) {
+		super(nome);
+	}
+	public double getAjudaDeCusto() {
+		return ajudaDeCusto;
+	}
+	public void setAjudaDeCusto(double ajudaDeCusto) {
+		this.ajudaDeCusto = ajudaDeCusto;
+	}
+	@Override
+	public double calcularSalario() {
+		double salarioLiquido = this.salarioBase-(this.imposto/100);
+		salarioLiquido += this.ajudaDeCusto;
+		return salarioLiquido;
+	}
+	
+
+}

@@ -1,0 +1,12 @@
+package controleexercicios;
+
+import java.util.Date;
+
+public class Exercicio02 {
+	public static void main(String[] args) {
+		
+		Date ano = new Date();
+		System.out.println(ano);
+	}
+
+}

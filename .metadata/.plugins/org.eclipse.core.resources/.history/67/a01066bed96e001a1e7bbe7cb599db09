@@ -1,0 +1,46 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioDiaSemana {
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Escreva o dia da semana: ");
+		String dia = entrada.next();
+		
+		if (dia == "domingo"||dia == "Domingo"||dia == "DOMINDO")
+		{
+			System.out.println("1");
+		}
+		else if (dia == "segunda" || dia == "Segunda"||dia == "SEGUNDA")
+		{
+			System.out.println("2");
+		}
+		else if (dia == "terça"||dia == "Terça"||dia == "TERÇA")
+		{
+			System.out.println("3");			
+		}
+		else if (dia == "quarta"||dia == "Quarta"||dia == "QUARTA")
+		{
+			System.out.println("4");			
+		}
+		else if (dia == "quinta"||dia == "Quinta"||dia == "QUINTA")
+		{
+			System.out.println("5");			
+		}
+		else if (dia == "sexta"||dia == "Sexta"||dia == "SEXTA")
+		{
+			System.out.println("6");			
+		}
+		else
+		{
+			System.out.println("Dia da semana invalido!");
+		}
+		
+		entrada.close();
+		
+	}
+
+}

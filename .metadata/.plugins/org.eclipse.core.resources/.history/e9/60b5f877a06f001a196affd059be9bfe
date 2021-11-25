@@ -1,0 +1,46 @@
+package controleexercicios;
+
+import java.util.Scanner;
+
+public class Exercicio06 {
+	
+	public static void main(String[] args) {
+		
+	Scanner entrada = new Scanner(System.in);
+	
+	int num = 23;
+	int contador = 9;
+	
+	
+	for (int i = 11; i > 0; i--)
+	{	
+		
+		System.out.print("Digite um numero de 1 a 100: ");
+		int resp = entrada.nextInt();
+		
+		if (resp==num)
+		{
+			System.out.println("PARABENS VOCÊ ACERTOU");
+			break;
+		}
+		else
+		{
+			if (contador == 0)
+				break;
+			System.out.println("\nVocê errou!\nTente outra vez!");
+			System.out.printf("Você ainda tem %d tentativas\n\n",contador);
+			contador--;
+		}
+		
+	}
+	
+	
+	if (contador == 0)
+		System.out.println("VOCÊ PERDEU!!!");
+	
+	
+	
+	
+	
+	}//class
+}//pac

@@ -1,0 +1,17 @@
+package classedesafio;
+
+public class Pessoa {
+	String nome;
+	double peso;
+	
+	
+	   
+	
+	
+	
+	double comer(double pesocomida)
+	{
+	  peso = peso+pesocomida;
+	  return peso;
+    }
+}

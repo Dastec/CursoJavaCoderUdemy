@@ -1,0 +1,24 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioConversao {
+	
+	public static void main(String[] args) {
+		
+		Scanner sal = new Scanner (System.in);
+		
+			String sal1 = sal.nextLine();
+			System.out.println("sal1");
+			
+			/*String sal2 = sal.nextLine();
+			System.out.println(sal2);
+			
+			String sal3= sal.nextLine();
+			System.out.println(sal3);*/
+			
+		sal.close();
+		
+	}
+
+}

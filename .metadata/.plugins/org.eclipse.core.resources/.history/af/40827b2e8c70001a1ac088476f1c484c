@@ -1,0 +1,17 @@
+package classe;
+
+public class Data {
+	
+	int dia;
+	int mes;
+	int ano;
+	
+	String obterDataFormatada() {
+		
+		//String dtformatada = Integer.toString(dia)+"/"+Integer.toString(mes)+"/"+Integer.toString(ano);
+		String dtformatada = String.format("%d/%d/%d",dia,mes,ano);
+				
+		return dtformatada;
+	}
+
+}

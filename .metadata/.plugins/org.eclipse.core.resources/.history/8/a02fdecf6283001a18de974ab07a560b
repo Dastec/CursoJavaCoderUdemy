@@ -1,0 +1,45 @@
+package encapsulamento;
+
+public class operacaodevetores {
+	//Exercicios 6 e 7
+	int []vetorA = new int[10];
+	int []vetorB = new int[15];
+	int []vetorC = new int[20];
+	
+	public int[] getVetorA() {
+		return vetorA;
+	}
+	public void setVetorA(int[] vetorA) {
+		this.vetorA = vetorA;
+	}
+	public int[] getVetorB() {
+		return vetorB;
+	}
+	public void setVetorB(int[] vetorB) {
+		this.vetorB = vetorB;
+	}
+	public int[] getVetorC() {
+		return vetorC;
+	}
+	public void setVetorC(int[] vetorC) {
+		this.vetorC = vetorC;
+	}
+	//Exercicio 8
+	public void ord(){
+	int maior = vetorA[0];
+	for (int vetorOrd: vetorA) {
+		if (vetorA[vetorOrd] >= maior) {
+			vetorA[vetorOrd] = maior;
+			
+			
+		}
+	
+	}
+		
+	}
+	
+	
+	
+	
+
+}

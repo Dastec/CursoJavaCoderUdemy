@@ -1,0 +1,59 @@
+package exerciciobanco;
+
+public class ContaBanco {
+	public int numConta = 1;
+	protected String tipo;
+	private double saldo;
+	private boolean status;
+	private String nome;
+	
+
+	
+	ContaBanco(String tipo, double saldo){
+		if (tipo == "CC"){
+			this.tipo = "Poupança";
+			this.saldo = 50;
+			this.status = true;
+			this.numConta += 1;
+		}
+		else if (tipo == "CP") {
+			this.tipo = "Corrente";
+			this.saldo = 150;
+			this.status = true;
+			this.numConta += 1;
+		}else System.out.println("Tipo invalido!");
+	}
+	
+	
+	double getSaldo() {
+		return this.saldo;
+	}
+	
+	void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	boolean getStatus() {
+		return this.status;
+	}
+	
+	void setStatus(boolean status) {
+		this.status = status;
+	}
+	
+	void abrirConta() {
+		this.status = true;; 
+	}
+	
+	String getNome () {
+		return this.nome;
+	}
+	
+	void setNome (String nome) {
+		this.nome = nome;
+	}
+
+	
+	
+
+}

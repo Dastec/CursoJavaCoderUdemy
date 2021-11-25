@@ -1,0 +1,25 @@
+package classe;
+
+import java.util.Scanner;
+
+public class ProdutoTeste {
+
+  public static void main(String[] args) {
+  
+  Scanner entrada = new Scanner(System.in);
+  
+  Produto p1 = new Produto ();
+  
+  p1.nome = "Arroz";
+  p1.descricao = "Pacote 5Kg";
+  p1.preco = p1.precoFinal();
+  System.out.print("Digite a quantidade de produtos deseja adicionar ao estoque: ");
+  p1.quantidade = entrada.nextInt();
+  
+  
+  System.out.print(p1.preco);
+  
+
+  }
+
+}

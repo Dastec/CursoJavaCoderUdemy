@@ -1,0 +1,12 @@
+package fundamentos;
+
+public class ConversaoTipoPremitivoNumerico {
+	
+	public static void main(String [] args) {
+		
+		double a = 1;
+		System.out.println(a);
+		
+	}
+
+}

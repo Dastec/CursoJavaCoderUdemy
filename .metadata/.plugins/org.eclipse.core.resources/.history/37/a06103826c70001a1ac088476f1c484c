@@ -1,0 +1,18 @@
+package classe;
+
+public class DataTeste {
+	
+	public static void main(String[] args) {
+		
+		Data dia1 = new Data();
+		Data mes1 = new Data();
+		Data ano1 = new Data();
+		
+		dia1 = 20;
+		mes1 ="Novembro";
+		ano1 = 1991;
+		
+		System.out.printf("%d/%s/%d",dia1,mes1,ano1);
+	}
+
+}

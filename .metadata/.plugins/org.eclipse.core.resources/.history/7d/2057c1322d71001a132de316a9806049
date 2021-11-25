@@ -1,0 +1,20 @@
+package classe;
+
+import java.util.Scanner;
+
+public class Caixa {
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		Scanner entradanum = new Scanner(System.in);
+		
+		System.out.print("Deseja iniciar uma venda: S/N: ");
+		String resp = entrada.next();
+		
+		if (resp == "s".equalsIgnoreCase()) {
+			
+	 		
+		}
+	}
+
+}

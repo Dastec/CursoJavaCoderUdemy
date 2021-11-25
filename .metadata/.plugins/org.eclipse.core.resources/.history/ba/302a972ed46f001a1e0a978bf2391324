@@ -1,0 +1,23 @@
+package controleexercicios;
+
+import java.util.Scanner;
+
+public class Exercicio07 {
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		int numerador = 0;
+		System.out.println("Digite um número: ");
+		int num = entrada.nextInt();
+		
+		while(num>0)
+		{
+			numerador+=num;
+			System.out.println(numerador);
+			System.out.println("Digite um número: ");
+			int num = entrada.nextInt();
+		}
+	}
+
+}

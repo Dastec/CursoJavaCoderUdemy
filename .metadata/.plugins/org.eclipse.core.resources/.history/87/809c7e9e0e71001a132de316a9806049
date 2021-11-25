@@ -1,0 +1,65 @@
+package classe;
+
+import java.util.Scanner;
+
+public class Produto {
+
+    int idproduto;
+    String nome;
+    String descricao;
+    double preco;
+    double desconto;
+    int quantidade;
+    int vendidos;
+    int estoque;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    //------------------------------------------------------------------------
+    int idProdutoFinal() {
+    	System.out.print("Digite o código do produto: ");
+    	idproduto = entrada.nextInt();
+    	return idproduto;
+    }
+    //------------------------------------------------------------------------
+    String nomeFinal() {
+    	System.out.print("Digite o nome do produto: ");
+    	nome = entrada.nextLine();
+    	return nome;
+    }
+    //------------------------------------------------------------------------
+    String descricaoFinal() {
+    	System.out.print("Digite a descrição do produto: ");
+    	descricao = entrada.nextLine();
+    	return descricao;
+    }
+    //------------------------------------------------------------------------
+    double precoFinal(){
+    	System.out.print("Digite o valor do Produto: ");
+    	preco = entrada.nextDouble();
+    	return preco;
+    }
+    //------------------------------------------------------------------------
+    double descontoFinal(){
+    	System.out.print("Desconto: ");
+    	desconto = entrada.nextDouble();
+    	return desconto;
+    }
+    //------------------------------------------------------------------------
+    int quantidadeFinal() {
+    	System.out.print("Digite a quantidade de produtos deseja adicionar ao estoque: ");
+    	quantidade = entrada.nextInt();
+    	return quantidade;
+    }
+    //------------------------------------------------------------------------
+    	
+    int vendidosFinal() {
+    	
+    	return vendidos;
+    }
+    
+    
+    
+    
+
+}//classe
